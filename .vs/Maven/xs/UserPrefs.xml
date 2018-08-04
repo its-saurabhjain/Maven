@@ -1,0 +1,7 @@
+﻿<Properties StartupConfiguration="{9A7F870F-137F-4473-A9B8-F1C8A811A657}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BirthDefectRegistry PreferredExecutionTarget="MonoDevelop.Default" />
+  <DisabledProjects>
+    <String>BirthDefectRegistry.csproj</String>
+  </DisabledProjects>
+</Properties>
