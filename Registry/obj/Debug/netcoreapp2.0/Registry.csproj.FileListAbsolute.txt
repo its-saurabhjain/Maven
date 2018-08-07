@@ -1,0 +1,10 @@
+/Users/sjain/Projects/Maven/Registry/bin/Debug/netcoreapp2.0/Registry.deps.json
+/Users/sjain/Projects/Maven/Registry/bin/Debug/netcoreapp2.0/Registry.runtimeconfig.json
+/Users/sjain/Projects/Maven/Registry/bin/Debug/netcoreapp2.0/Registry.runtimeconfig.dev.json
+/Users/sjain/Projects/Maven/Registry/bin/Debug/netcoreapp2.0/Registry.dll
+/Users/sjain/Projects/Maven/Registry/bin/Debug/netcoreapp2.0/Registry.pdb
+/Users/sjain/Projects/Maven/Registry/obj/Debug/netcoreapp2.0/Registry.csproj.CoreCompileInputs.cache
+/Users/sjain/Projects/Maven/Registry/obj/Debug/netcoreapp2.0/Registry.AssemblyInfoInputs.cache
+/Users/sjain/Projects/Maven/Registry/obj/Debug/netcoreapp2.0/Registry.AssemblyInfo.cs
+/Users/sjain/Projects/Maven/Registry/obj/Debug/netcoreapp2.0/Registry.dll
+/Users/sjain/Projects/Maven/Registry/obj/Debug/netcoreapp2.0/Registry.pdb

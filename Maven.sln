@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirthDefectRegistry", "BirthDefectRegistry\BirthDefectRegistry.csproj", "{9A7F870F-137F-4473-A9B8-F1C8A811A657}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registry", "Registry\Registry.csproj", "{4FB8E760-587F-4F42-849E-970F5624FAFF}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{9624ACC4-492E-4E84-90C9-2DDB18DAC019}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +17,13 @@ Global
 		{9A7F870F-137F-4473-A9B8-F1C8A811A657}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A7F870F-137F-4473-A9B8-F1C8A811A657}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A7F870F-137F-4473-A9B8-F1C8A811A657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FB8E760-587F-4F42-849E-970F5624FAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FB8E760-587F-4F42-849E-970F5624FAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FB8E760-587F-4F42-849E-970F5624FAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FB8E760-587F-4F42-849E-970F5624FAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9624ACC4-492E-4E84-90C9-2DDB18DAC019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9624ACC4-492E-4E84-90C9-2DDB18DAC019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9624ACC4-492E-4E84-90C9-2DDB18DAC019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9624ACC4-492E-4E84-90C9-2DDB18DAC019}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

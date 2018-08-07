@@ -1,0 +1,16 @@
+services:
+  birthdefectregistry:
+    build:
+      context: /Users/sjain/Projects/Maven/BirthDefectRegistry
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: birthdefectregistry
+    ports:
+    - target: 80
+  registry:
+    build:
+      context: /Users/sjain/Projects/Maven/Registry
+      dockerfile: Dockerfile
+    image: registry
+version: '3.4'

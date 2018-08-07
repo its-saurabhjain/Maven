@@ -1,0 +1,10 @@
+/Users/sjain/Projects/Maven/BirthDefectRegistry/bin/Debug/netcoreapp2.0/BirthDefectRegistry.deps.json
+/Users/sjain/Projects/Maven/BirthDefectRegistry/bin/Debug/netcoreapp2.0/BirthDefectRegistry.runtimeconfig.json
+/Users/sjain/Projects/Maven/BirthDefectRegistry/bin/Debug/netcoreapp2.0/BirthDefectRegistry.runtimeconfig.dev.json
+/Users/sjain/Projects/Maven/BirthDefectRegistry/bin/Debug/netcoreapp2.0/BirthDefectRegistry.dll
+/Users/sjain/Projects/Maven/BirthDefectRegistry/bin/Debug/netcoreapp2.0/BirthDefectRegistry.pdb
+/Users/sjain/Projects/Maven/BirthDefectRegistry/obj/Debug/netcoreapp2.0/BirthDefectRegistry.csproj.CoreCompileInputs.cache
+/Users/sjain/Projects/Maven/BirthDefectRegistry/obj/Debug/netcoreapp2.0/BirthDefectRegistry.AssemblyInfoInputs.cache
+/Users/sjain/Projects/Maven/BirthDefectRegistry/obj/Debug/netcoreapp2.0/BirthDefectRegistry.AssemblyInfo.cs
+/Users/sjain/Projects/Maven/BirthDefectRegistry/obj/Debug/netcoreapp2.0/BirthDefectRegistry.dll
+/Users/sjain/Projects/Maven/BirthDefectRegistry/obj/Debug/netcoreapp2.0/BirthDefectRegistry.pdb

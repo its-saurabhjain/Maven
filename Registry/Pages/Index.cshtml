@@ -1,0 +1,23 @@
+﻿@page
+@{
+    ViewData["Title"] = "Registries";
+}
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <!--<li><a asp-page="/BirthDefectRegistry">Birth Defect Registry</a></li>-->
+                    <li><a asp-controller="BirthDefect" asp-action="GetRegistryList">Birth Defect Registry</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <p> This is Registries Listing</p>
+  </div>

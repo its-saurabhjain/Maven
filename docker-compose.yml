@@ -1,0 +1,18 @@
+version: '3.4'
+services:
+  birthdefectregistry:
+    image: itsaurabh/birthdefectregistry:maven
+    container_name: "webapi"
+    build:
+      context: ./BirthDefectRegistry/
+      dockerfile: Dockerfile
+    ports:
+      - "9084:80"
+  registry:
+    image: itsaurabh/registry:maven
+    container_name: "mvc-app"
+    build:
+      context: ./Registry/
+      dockerfile: Dockerfile
+    ports:
+      - "9085:80"

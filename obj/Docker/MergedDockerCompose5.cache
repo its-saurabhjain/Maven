@@ -1,0 +1,59 @@
+services:
+  birthdefectregistry:
+    build:
+      context: /Users/sjain/Projects/Maven/BirthDefectRegistry
+      dockerfile: Dockerfile
+      target: base
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ApiOptions__DomainModelApiBaseUrl: http://host.docker.internal:9081/api
+      ApiOptions__SearchApiBaseUrl: http://host.docker.internal:9088/api
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: birthdefectregistry:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  bin/Debug/netcoreapp2.0/BirthDefectRegistry.dll'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/bash -c "if PID=$$(pidof
+        -x dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 9084
+      target: 80
+    - target: 80
+    volumes:
+    - /Users/sjain/Projects/Maven/BirthDefectRegistry:/app:rw
+    - /Users/sjain/.vsdbg/vs2017u5:/remote_debugger:ro
+    - /usr/local/share/dotnet/sdk/NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - /Users/sjain/.nuget/packages:/root/.nuget/packages:ro
+  registry:
+    build:
+      context: /Users/sjain/Projects/Maven/Registry
+      dockerfile: Dockerfile
+      target: base
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ApiOptions__DomainModelApiBaseUrl: http://host.docker.internal:9081/api
+      ApiOptions__SearchApiBaseUrl: http://host.docker.internal:9088/api
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: registry:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  bin/Debug/netcoreapp2.0/Registry.dll'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/bash -c "if PID=$$(pidof
+        -x dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - published: 9085
+      target: 80
+    volumes:
+    - /Users/sjain/Projects/Maven/Registry:/app:rw
+    - /Users/sjain/.vsdbg/vs2017u5:/remote_debugger:ro
+    - /usr/local/share/dotnet/sdk/NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+    - /Users/sjain/.nuget/packages:/root/.nuget/packages:ro
+version: '3.4'
